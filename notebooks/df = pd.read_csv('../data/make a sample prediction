@@ -1,0 +1,5 @@
+sample = X_test.iloc[0]
+prediction = model.predict([sample])
+
+print("Sample prediction:", prediction)
+print("Actual:", y_test.iloc[0])
