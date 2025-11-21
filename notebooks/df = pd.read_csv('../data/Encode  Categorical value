@@ -1,0 +1,6 @@
+le = LabelEncoder()
+
+for col in df.select_dtypes(include=['object']).columns:
+    df[col] = le.fit_transform(df[col])
+
+df.head()
